@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e36478fc23930c00094e76125bbf5ff7190d046">
+        <dex dex="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fe3a44a68410d91dbfcf48ff856f23ff48ed2475/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3704a5c4eb7bc4fbe4a60ca700547cca0b173433/classes.dex" />
+    </item>
+
+</items>
