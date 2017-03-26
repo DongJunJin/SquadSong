@@ -88,6 +88,10 @@
         "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/layout/display_photo.xml",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/layout/display_photo.xml"
+    },
+    {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/layout/notification_template_big_media_narrow.xml"
     },

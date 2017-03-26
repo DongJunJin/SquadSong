@@ -1,4 +1,4 @@
-#Sat Mar 25 20:04:28 EDT 2017
+#Sun Mar 26 02:14:51 EDT 2017
 base.0=/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fe3a44a68410d91dbfcf48ff856f23ff48ed2475
 renamed.1=classes2.dex
 renamed.0=classes.dex

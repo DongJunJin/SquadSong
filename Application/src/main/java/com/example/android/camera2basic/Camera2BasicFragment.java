@@ -26,6 +26,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
 import android.graphics.Point;
@@ -48,7 +50,11 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
 import android.support.v13.app.FragmentCompat;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.util.Base64;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -59,6 +65,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -883,11 +890,46 @@ public class Camera2BasicFragment extends Fragment
         }
     }
 
+    Bundle args;
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.picture: {
                 takePicture();
+
+                //TODO
+                //Convert to Bitmap
+                Bitmap bitmap = BitmapFactory.decodeFile(mFile.getAbsolutePath());
+                if(bitmap != null){
+                    Log.d("Success" , "Success");
+                    //Convert to Base64
+                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                    byte[] b = baos.toByteArray();
+                    String tossValue = Base64.encodeToString(b, Base64.DEFAULT);
+                    if(tossValue != null){
+                        Log.d("Penis Head", tossValue);
+                        Fragment fragment = new DisplayPhoto();
+                        String source = mFile.toURI().toString();
+                        args = new Bundle();
+                        args.putString("Imagefile", source);
+                        fragment.setArguments(args);
+                        android.app.FragmentManager fragmentManager = getActivity().getFragmentManager();
+                        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+
+                    }
+                    else{
+                        showToast("No String");
+                    }
+                }
+                else{
+                    showToast("Fail Bitmap");
+                }
+
+
+
+
                 break;
             }
             case R.id.info: {
