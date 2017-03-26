@@ -7,8 +7,26 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2e36478fc23930c00094e76125bbf5ff7190d046">
+        sha1="f0cc39f93f60be4044ddca77386c4ac1048a5fa3">
         <dex dex="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fe3a44a68410d91dbfcf48ff856f23ff48ed2475/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3de8009bca28e8f7126342d77a742014753f1cbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andrew/.android/build-cache/d20938ee5477d840190d135d725cad6250c86d55/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e54e005e0abe7b066e9bfc856b2af40f3fbc763f/classes.dex" />
     </item>
     <item
         is-multidex="true"

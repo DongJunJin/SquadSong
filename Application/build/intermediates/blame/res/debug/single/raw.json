@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/c.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/c.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/d.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/d.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/g.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/g.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/b.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/b.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/e.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/e.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/a.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/a.wav"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/raw/f.wav",
+        "source": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/res/raw/f.wav"
+    }
+]

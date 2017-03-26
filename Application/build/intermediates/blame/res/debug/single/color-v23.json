@@ -1,38 +1,42 @@
 [
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_color_highlight_material.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_color_highlight_material.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_spinner.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_spinner.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_seek_thumb.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_switch_track.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_switch_track.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_switch_thumb.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_btn_colored_text_material.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_btn_checkable.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_edittext.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_edittext.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_tint_default.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_tint_default.xml"
     },
     {
         "merged": "/home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+        "source": "/home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     }
 ]

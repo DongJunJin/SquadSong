@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:18:1-40:12
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:18:1-44:12
 	package
 		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:19:5-47
 	xmlns:android
@@ -9,69 +9,98 @@ uses-permission#android.permission.CAMERA
 ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:21:5-65
 	android:name
 		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:21:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:22:5-66
+	android:name
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:22:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:23:22-76
 uses-feature#android.hardware.camera
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:23:5-60
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:27:5-60
 	android:name
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:23:19-57
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:27:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:24:5-70
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:28:5-70
 	android:name
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:24:19-67
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:28:19-67
 application
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:26:5-38:19
-MERGED from [com.android.support:support-v13:25.0.1] /home/andrew/.android/build-cache/bccedd25c7fadb01f885cce7b6f1c6f1b2a83743/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:25.0.1] /home/andrew/.android/build-cache/326d6dd503c37a815112d134e19e220cae39e5bc/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.1] /home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.1] /home/andrew/.android/build-cache/dea04d7aaadb0643b77f98d20131be124d588dc8/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.1] /home/andrew/.android/build-cache/5d18c46c208cc0a386cbd85cab268922634b1f80/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.1] /home/andrew/.android/build-cache/1ea2faa2743819bff8403432aee18e6681372f3f/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.1] /home/andrew/.android/build-cache/75af1b26ce5d6cd268bb2d4ee96ce583999b2959/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.1] /home/andrew/.android/build-cache/25c351c98f2ca098ac20a2ac98f7fea9ab501977/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] /home/andrew/.android/build-cache/e536a8e7d397bbdffd606c80970c58d7c76db6f1/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.1] /home/andrew/.android/build-cache/db8fa557925ccc05262ca8f9d8a35d60e5649967/output/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.0.1] /home/andrew/.android/build-cache/09995e2ccd7f909f2a4257da4168b40feb6703c9/output/AndroidManifest.xml:25:5-20
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:30:5-42:19
+MERGED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.0] /home/andrew/.android/build-cache/d20938ee5477d840190d135d725cad6250c86d55/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.0] /home/andrew/.android/build-cache/34197d88b18ae6671f6ef658c2bc302cf5180051/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] /home/andrew/.android/build-cache/5a8c363117df2065ad15e45d0b8b61dad7dff75d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/andrew/.android/build-cache/35a8bcfb65c252de5810aac31bd0786a9e2e707d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/andrew/.android/build-cache/64ba4311616fc21198b1639648d086062527abcd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/andrew/.android/build-cache/638435720d7a31d5a0ffb02454459eae3997bb99/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/andrew/.android/build-cache/dc1efa731743460f7674a6827d2e68c0d988296c/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/andrew/.android/build-cache/f9533095d4f500a54b46623e1b050983b40ad3eb/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /home/andrew/.android/build-cache/2d6cf1644148488188595245975f6974988a5e62/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/andrew/.android/build-cache/c988c770f89b2957288b6ae9b9aaa2d09ad89145/output/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:27:9-41
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:31:9-41
 	android:allowBackup
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:26:18-44
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:30:18-44
 	android:icon
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:28:9-45
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:32:9-45
 	android:theme
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:29:9-45
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:33:9-45
 activity#com.example.android.camera2basic.CameraActivity
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:31:9-37:20
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:35:9-41:20
 	android:label
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:32:19-51
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:36:19-51
 	android:name
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:35:19-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:37:13-40:29
 action#android.intent.action.MAIN
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:34:17-69
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:35:17-77
+ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml:39:27-74
 uses-sdk
 INJECTED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v13:25.0.1] /home/andrew/.android/build-cache/bccedd25c7fadb01f885cce7b6f1c6f1b2a83743/output/AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:cardview-v7:25.0.1] /home/andrew/.android/build-cache/326d6dd503c37a815112d134e19e220cae39e5bc/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:25.0.1] /home/andrew/.android/build-cache/0a101a9d84f95d8e4e7e08af274841ddb1fe1971/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.1] /home/andrew/.android/build-cache/dea04d7aaadb0643b77f98d20131be124d588dc8/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.1] /home/andrew/.android/build-cache/5d18c46c208cc0a386cbd85cab268922634b1f80/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.1] /home/andrew/.android/build-cache/1ea2faa2743819bff8403432aee18e6681372f3f/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.1] /home/andrew/.android/build-cache/75af1b26ce5d6cd268bb2d4ee96ce583999b2959/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.1] /home/andrew/.android/build-cache/25c351c98f2ca098ac20a2ac98f7fea9ab501977/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] /home/andrew/.android/build-cache/e536a8e7d397bbdffd606c80970c58d7c76db6f1/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.1] /home/andrew/.android/build-cache/db8fa557925ccc05262ca8f9d8a35d60e5649967/output/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.0.1] /home/andrew/.android/build-cache/09995e2ccd7f909f2a4257da4168b40feb6703c9/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:cardview-v7:25.3.0] /home/andrew/.android/build-cache/d20938ee5477d840190d135d725cad6250c86d55/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.0] /home/andrew/.android/build-cache/34197d88b18ae6671f6ef658c2bc302cf5180051/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.0] /home/andrew/.android/build-cache/5a8c363117df2065ad15e45d0b8b61dad7dff75d/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/andrew/.android/build-cache/35a8bcfb65c252de5810aac31bd0786a9e2e707d/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/andrew/.android/build-cache/64ba4311616fc21198b1639648d086062527abcd/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/andrew/.android/build-cache/638435720d7a31d5a0ffb02454459eae3997bb99/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/andrew/.android/build-cache/dc1efa731743460f7674a6827d2e68c0d988296c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/andrew/.android/build-cache/f9533095d4f500a54b46623e1b050983b40ad3eb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.0] /home/andrew/.android/build-cache/2d6cf1644148488188595245975f6974988a5e62/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/andrew/.android/build-cache/c988c770f89b2957288b6ae9b9aaa2d09ad89145/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.microsoft.projectoxford:emotion:1.0.355] /home/andrew/.android/build-cache/9b77e06defc84b1f28a7e7eb14e15a4ce33aa993/output/AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.0.1] /home/andrew/.android/build-cache/bccedd25c7fadb01f885cce7b6f1c6f1b2a83743/output/AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		INJECTED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml
 		INJECTED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml
 		INJECTED from /home/andrew/AndroidStudioProjects/SquadSong_MSFTHACKS/Application/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.0] /home/andrew/.android/build-cache/d20938ee5477d840190d135d725cad6250c86d55/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/andrew/.android/build-cache/677ff7015aec8053457b072761084135630ce213/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.0] /home/andrew/.android/build-cache/34197d88b18ae6671f6ef658c2bc302cf5180051/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] /home/andrew/.android/build-cache/5a8c363117df2065ad15e45d0b8b61dad7dff75d/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/andrew/.android/build-cache/35a8bcfb65c252de5810aac31bd0786a9e2e707d/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/andrew/.android/build-cache/64ba4311616fc21198b1639648d086062527abcd/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/andrew/.android/build-cache/638435720d7a31d5a0ffb02454459eae3997bb99/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/andrew/.android/build-cache/dc1efa731743460f7674a6827d2e68c0d988296c/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/andrew/.android/build-cache/f9533095d4f500a54b46623e1b050983b40ad3eb/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.0] /home/andrew/.android/build-cache/2d6cf1644148488188595245975f6974988a5e62/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v13:25.3.0] /home/andrew/.android/build-cache/d304c4e37be22e6e3f0c16a8ae91d24f864c8464/output/AndroidManifest.xml:26:9-47
+library
+ADDED from [com.microsoft.projectoxford:emotion:1.0.355] /home/andrew/.android/build-cache/9b77e06defc84b1f28a7e7eb14e15a4ce33aa993/output/AndroidManifest.xml:9:5-16

@@ -22,6 +22,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -45,6 +46,8 @@ import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
+import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -65,10 +68,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.microsoft.projectoxford.emotion.EmotionServiceClient;
+import com.microsoft.projectoxford.emotion.EmotionServiceRestClient;
+import com.microsoft.projectoxford.emotion.contract.RecognizeResult;
+import com.microsoft.projectoxford.emotion.contract.Scores;
+
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -191,6 +201,11 @@ public class Camera2BasicFragment extends Fragment
     /**
      * {@link CameraDevice.StateCallback} is called when {@link CameraDevice} changes its state.
      */
+
+    public EmotionServiceClient emotionServiceClient = new EmotionServiceRestClient("6f453cccb2db4215bb5b5324c982c397");
+
+    public ArrayList<String> EmoteList;
+
     private final CameraDevice.StateCallback mStateCallback = new CameraDevice.StateCallback() {
 
         @Override
@@ -906,6 +921,7 @@ public class Camera2BasicFragment extends Fragment
                     //Convert to Base64
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                    final ByteArrayInputStream inputStream = new ByteArrayInputStream(baos.toByteArray());
                     byte[] b = baos.toByteArray();
                     String tossValue = Base64.encodeToString(b, Base64.DEFAULT);
                     if(tossValue != null){
@@ -914,6 +930,16 @@ public class Camera2BasicFragment extends Fragment
                         String source = mFile.toURI().toString();
                         args = new Bundle();
                         args.putString("Imagefile", source);
+
+                        sendRequest(inputStream);
+
+                        if(EmoteList != null){
+                            args.putStringArrayList("EmoteList", EmoteList);
+                        }
+                        else{
+                            Log.d("Emote Fail", "FAIL");
+                        }
+
                         fragment.setArguments(args);
                         android.app.FragmentManager fragmentManager = getActivity().getFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
@@ -926,8 +952,6 @@ public class Camera2BasicFragment extends Fragment
                 else{
                     showToast("Fail Bitmap");
                 }
-
-
 
 
                 break;
@@ -943,6 +967,50 @@ public class Camera2BasicFragment extends Fragment
                 break;
             }
         }
+    }
+
+    private void sendRequest(ByteArrayInputStream inputStream){
+        AsyncTask<InputStream, String, List<RecognizeResult>> emotionTask = new AsyncTask<InputStream, String, List<RecognizeResult>>(){
+            //ProgressDialog mDialog = new ProgressDialog(CameraActivity.this);
+
+            @Override
+            protected List<RecognizeResult> doInBackground (InputStream... params) {
+                try {
+                    //publishProgress("Analyzing...");
+                    List<RecognizeResult> result = emotionServiceClient.recognizeImage(params[0]);
+                    return result;
+                }
+                catch (Exception ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            protected void onPreExecute () {
+                //mDialog.show();
+            }
+
+            @Override
+            protected void onPostExecute (List<RecognizeResult> recognizeResults) {
+                //mDialog.dismiss();
+//                for (RecognizeResult res : recognizeResults){
+//                    //final String status = getEmotion(res);
+//                }
+                //TODO
+                for(RecognizeResult res : recognizeResults){
+
+                    EmoteList.add(getEmotion(res));
+                }
+            }
+
+            @Override
+            protected void onProgressUpdate (String... values){
+                //mDialog.setMessage(values[0]);
+            }
+        };
+
+        emotionTask.execute(inputStream);
+
     }
 
     private void setAutoFlash(CaptureRequest.Builder requestBuilder) {
@@ -1070,6 +1138,61 @@ public class Camera2BasicFragment extends Fragment
                                 }
                             })
                     .create();
+        }
+    }
+
+    private String getEmotion (RecognizeResult res){
+        List<Double> list = new ArrayList<>();
+        Scores scores = res.scores;
+
+        list.add(scores.anger);
+        list.add(scores.happiness);
+        list.add(scores.contempt);
+        list.add(scores.disgust);
+        list.add(scores.fear);
+        list.add(scores.neutral);
+        list.add(scores.sadness);
+        list.add(scores.surprise);
+
+        Collections.sort(list);
+
+        double maxNum = list.get(list.size() - 1);
+        if(maxNum == scores.fear) { //Play A
+            return "Fear";
+        }
+        else if(maxNum == scores.disgust) {//Play B
+//            mediaPlayer = MediaPlayer.create(this, R.raw.b);
+//            mediaPlayer.start();
+            return "Disgust";
+        }
+        else if(maxNum == scores.contempt)// Do nothing
+        {
+            return "Contempt";
+        }
+        else if(maxNum == scores.happiness) { //Play C
+//            mediaPlayer = MediaPlayer.create(this, R.raw.c);
+//            mediaPlayer.start();
+            return "Happiness";
+        }
+        else if(maxNum == scores.anger) {//Play D
+//            mediaPlayer = MediaPlayer.create(this, R.raw.d);
+//            mediaPlayer.start();
+            return "Anger";
+        }
+        else if(maxNum == scores.sadness) {//Play E
+//            mediaPlayer = MediaPlayer.create(this, R.raw.e);
+//            mediaPlayer.start();
+            return "Sadness";
+        }
+        else if(maxNum == scores.neutral) {//Play F
+//            mediaPlayer = MediaPlayer.create(this, R.raw.f);
+//            mediaPlayer.start();
+            return "Neutral";
+        }
+        else { //Play G (Surprise)
+//            mediaPlayer = MediaPlayer.create(this, R.raw.g);
+//            mediaPlayer.start();
+            return "Surprise";
         }
     }
 
